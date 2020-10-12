@@ -13,6 +13,7 @@ tied to the largest exponent. i.e., you may want to make the array larger when n
 typically an array is not made smaller as it is inefficient.)
 
 Develop a full class:
+
 1.
 All proper constructor and destructor functions, e.g.,
 Poly A(5,7); // Memory is reserved for polynomial A, with a largest power of 7
