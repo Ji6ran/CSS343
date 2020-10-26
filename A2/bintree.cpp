@@ -93,7 +93,7 @@ void BinTree::makeEmptyHelper(Node*& cur) {
 BinTree& BinTree::operator=(const BinTree& rTree)
 {
 	if (*this == rTree) return *this;
-	this->makeEmpty();  // deletes the left tree
+	this->~BinTree();  // deletes the left tree
 	assignHelper(rTree.root, this->root);
 	return *this;   // returns lTree when its the same as rTree
 }
