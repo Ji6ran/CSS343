@@ -77,10 +77,8 @@ void BinTree::makeEmptyHelper(Node*& cur) {
 		makeEmptyHelper(cur->left); // go left
 		makeEmptyHelper(cur->right); // go right
 
-		if (cur->data != nullptr) {
-			delete cur->data; // delete then set to null to avoid mem leak
-			cur->data = nullptr;
-		}
+		delete cur->data; // delete then set to null to avoid mem leak
+		cur->data = nullptr;
 		delete cur;
 		cur = nullptr;
 	}
